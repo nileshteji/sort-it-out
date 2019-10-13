@@ -37,26 +37,20 @@ int main(void)
 
   printf("\n ------- NOW WE WILL MOVE THE FILES ---------- \n");
 
-        char str1[50]="cp *.c /home/shivam/Desktop/Rahul_c";
-        //scanf("%[^\n]%*c", str); 
-        //str=
-        //printf("%s", str); 
+        char str1[50]="cp *.c /home/codingtitan/Desktop/cFiles";
+        
          system(str1);
        
-       char str2[50]="cp *.cpp /home/shivam/Desktop/Rahul_cpp";
-        //scanf("%[^\n]%*c", str); 
-        //str=
-        //printf("%s", str); 
+       char str2[50]="cp *.cpp /home/shivam/Desktop/cppFiles";
+       
          system(str2);
-          char str3[50]="cp *.txt /home/shivam/Desktop/Rahul_txt";
-        //scanf("%[^\n]%*c", str); 
-        //str=
-        //printf("%s", str); 
+
+          char str3[50]="cp *.txt /home/shivam/Desktop/testFiles";
+        
          system(str3);
-          char str4[50]="cp *.py /home/shivam/Desktop/Rahul_py";
-        //scanf("%[^\n]%*c", str); 
-        //str=
-        //printf("%s", str); 
+        
+  char str4[50]="cp *.py /home/shivam/Desktop/pythonFiles";
+        
          system(str4);
    
     printf("\n FILES COPIED \n ");
