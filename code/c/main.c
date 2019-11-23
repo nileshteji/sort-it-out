@@ -43,12 +43,18 @@ int main(int argc, char const *argv[]) {
             // }
         if(isFileExists(get_filename_ext(de->d_name))==1){
            // printf("File Exists\n");
+           if(de->d_name=="main.c"){
+               break;
+           }
+           else{
+
+           
             char move[10]="mv";
             strcat(strcat(move," "),de->d_name);
             strcat(strcat(move," "),get_filename_ext(de->d_name));
             system(move);
             
-          
+           }
            
             
             }
