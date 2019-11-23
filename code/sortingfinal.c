@@ -38,19 +38,23 @@ int main(void)
   printf("\n ------- NOW WE WILL MOVE THE FILES ---------- \n");
 
         char str1[50]="cp *.c /home/codingtitan/Desktop/cFiles";
-        
-         system(str1);
+        char str1a[50]="mkdir /home/codingtitan/Desktop/cFiles";
+        system(str1a);
+        system(str1);
        
-       char str2[50]="cp *.cpp /home/shivam/Desktop/cppFiles";
-       
+        char str2[50]="cp *.cpp /home/codingtitan/Desktop/MinorTesting/cppFiles";
+         char str2a[50]="mkdir /home/codingtitan/Desktop/MinorTesting/cppFiles";
+         system(str2a);
          system(str2);
 
-          char str3[50]="cp *.txt /home/shivam/Desktop/testFiles";
-        
+          char str3[50]="cp *.txt /home/codingtitan/Desktop/MinorTesting/textFiles";
+         char str3a[50]="mkdir /home/codingtitan/Desktop/MinorTesting/textFiles";
+         system(str3a);
          system(str3);
         
-  char str4[50]="cp *.py /home/shivam/Desktop/pythonFiles";
-        
+         char str4[50]="cp *.py /home/codingtitan/Desktop/MinorTesting/pythonFiles";
+         char str4a[50]="mkdir /home/codingtitan/Desktop/MinorTesting/pythonFiles";
+         system(str4a);
          system(str4);
    
     printf("\n FILES COPIED \n ");
