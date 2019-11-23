@@ -1,11 +1,7 @@
 #include<stdio.h>
 #include <dirent.h>
 #include<string.h>
-
-
 int isFileExists(const char *path);
-
-
 
 //This function tell us about the extension of the file
 const char *get_filename_ext(char *filename) {
@@ -13,8 +9,6 @@ const char *get_filename_ext(char *filename) {
    if(!dot || dot == filename) return "";
    return dot + 1;
 }
-
-
 
 int isFileExists(const char *path)
 {
@@ -25,7 +19,8 @@ int isFileExists(const char *path)
     if (fptr == NULL)
         return 0;
         
-    fclose(fptr);
+  
+  fclose(fptr);
 
     return 1;
 }
@@ -46,11 +41,14 @@ int main(int argc, char const *argv[]) {
             // else{
             //   printf("Sorry\n");
             // }
-          if(isFileExists(get_filename_ext(de->d_name))==1){
-              printf("File Exists SuccesFully\n");
+        if(isFileExists(get_filename_ext(de->d_name))==1){
+            printf("File Exists\n");
             }
+
             else{
-                printf("File Doesn't Exists");
+            mkdir(get_filename_ext(de->d_name),0070);
+            // printf("hi Nilesh\n");
+                //printf("File Doesn't Exists\n");
             }
 }
 
