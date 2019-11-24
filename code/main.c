@@ -79,54 +79,27 @@ struct dirent *de;
 int main(int argc, char const *argv[]) {
 
 
+printf("How you want to sort your files\n");
+printf("1.Extensions\n");
+printf("2.Alphabetically\n");
+printf("3.Date\n");
+printf("4.Size\n");
+int a;
+scanf("%d",&a);
 
-    folderSort();
-//    struct dirent *de;  
-//     DIR *dr = opendir(".");
+switch (a)
+{
+case 1:{
+folderSort();
+break;
+}
+    
 
-//      if (dr == NULL)  
-//      {
-//          printf("Could not open current directory" );
-//          return 0;
-//      }
-//         while ((de = readdir(dr)) != NULL){
-//            // if(mkdir(get_filename_ext(de->d_name))){
-//             //   printf("Creted Succesfully\n");
-//             // }
-//             // else{
-//             //   printf("Sorry\n");
-//             // }
-//         if(isFileExists(get_filename_ext(de->d_name))==1){
-//            // printf("File Exists\n");
-//            if(de->d_name=="main.c"){
-//                break;
-//            }
-//            else{
-
-           
-//             char move[10]="mv";
-//             strcat(strcat(move," "),de->d_name);
-//             strcat(strcat(move," "),get_filename_ext(de->d_name));
-//             system(move);
-            
-//            }
-           
-            
-//             }
-
-//             else{
-//             mkdir(get_filename_ext(de->d_name),0070);
-//             // printf("hi Nilesh\n");
-//                 //printf("File Doesn't Exists\n");
-//             }
-// }
-
-
-//      closedir(dr);
-//      return 0;
+default:
+printf("Sorry Wrong execution");
+    break;
+}
 
 
 
-
-//   return 0;
 }
