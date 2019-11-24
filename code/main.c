@@ -125,13 +125,14 @@ void sortByDate(){
 int main(int argc, char const *argv[]) {
 
 
-
+printf("===================================\n");
 printf("How you want to sort your files\n");
 printf("1.Extensions\n");
 printf("2.Size\n");
 printf("3.Date created \n");
-printf("4.Alphabetically\n");
+printf("4.Alphabetically(Default linux sort)\n");
 printf("5.Details of all Files\n");
+printf("==============================\n");
 int a;
 scanf("%d",&a);
 
