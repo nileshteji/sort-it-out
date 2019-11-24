@@ -1,6 +1,12 @@
 #include<stdio.h>
 #include <dirent.h>
 #include<string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 
 int isFileExists(const char *path);
 void folderSort();
@@ -30,6 +36,7 @@ int isFileExists(const char *path)
 void folderSort(){
 struct dirent *de;  
     DIR *dr = opendir(".");
+    
 
      if (dr == NULL)  
      {
@@ -37,14 +44,9 @@ struct dirent *de;
         
      }
         while ((de = readdir(dr)) != NULL){
-           // if(mkdir(get_filename_ext(de->d_name))){
-            //   printf("Creted Succesfully\n");
-            // }
-            // else{
-            //   printf("Sorry\n");
-            // }
+           
         if(isFileExists(get_filename_ext(de->d_name))==1){
-           // printf("File Exists\n");
+          
             char move[10]="mv";
             strcat(strcat(move," "),de->d_name);
             strcat(strcat(move," "),get_filename_ext(de->d_name));
@@ -65,8 +67,7 @@ struct dirent *de;
 
             system(move);
             
-            // printf("hi Nilesh\n");
-                //printf("File Doesn't Exists\n");
+           
             }
 }
 
@@ -76,14 +77,61 @@ struct dirent *de;
 
 }
 
+void sortBySize(){
+   FILE *fptr;
+    char ch;
+    system("ls -S > b1.txt");
+    fptr = fopen("b1.txt", "r");
+    if (fptr == NULL)
+    {
+        printf("Cannot open file \n");
+        exit(0);
+    }
+    ch = fgetc(fptr);
+    while (ch != EOF)
+    {
+        printf ("%c", ch);
+        ch = fgetc(fptr);
+    }
+    fclose(fptr);
+}
+
+void sortByDate(){
+    FILE *fptr;
+    char ch;
+    system("ls -t > c1.csv");
+
+    /*  open the file for reading */
+
+    fptr = fopen("c1.csv", "r");
+    if (fptr == NULL)
+    {
+        printf("Cannot open file \n");
+        exit(0);
+    }
+    ch = fgetc(fptr);
+    while (ch != EOF)
+    {
+        printf ("%c", ch);
+        ch = fgetc(fptr);
+    }
+    fclose(fptr);
+}
+
+
+
+
+
 int main(int argc, char const *argv[]) {
+
 
 
 printf("How you want to sort your files\n");
 printf("1.Extensions\n");
-printf("2.Alphabetically\n");
-printf("3.Date\n");
-printf("4.Size\n");
+printf("2.Size\n");
+printf("3.Date created \n");
+printf("4.Alphabetically\n");
+printf("5.Details of all Files\n");
 int a;
 scanf("%d",&a);
 
@@ -93,6 +141,16 @@ case 1:{
 folderSort();
 break;
 }
+
+case 2:{
+ sortBySize();
+ break;
+}
+
+case 3:{
+    sortByDate();
+    break;
+} 
     
 
 default:

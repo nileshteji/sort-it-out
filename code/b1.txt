@@ -1,0 +1,9 @@
+a.out
+main.c
+sortBySize.c
+sortingfinal.c
+scode.c
+sortByAlphabet.c
+sortByAlphabet.h
+chdir.c
+b1.txt
