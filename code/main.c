@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include <dirent.h>
 #include<string.h>
-#include "sortByAlphabet"
+#include "sortByAlphabet.h"
 int isFileExists(const char *path);
 void folderSort();
 
