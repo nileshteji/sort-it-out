@@ -1,9 +1,11 @@
-a.out
-main.c
-sortBySize.c
-sortingfinal.c
-scode.c
-sortByAlphabet.c
-sortByAlphabet.h
-chdir.c
-b1.txt
+total 48K
+   0 c1.csv
+   0 b1.txt
+4.0K chdir.c
+4.0K sortByAlphabet.h
+4.0K sortByAlphabet.c
+4.0K scode.c
+4.0K sortingfinal.c
+4.0K sortBySize.c
+4.0K main.c
+ 20K a.out

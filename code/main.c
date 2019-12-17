@@ -80,7 +80,7 @@ struct dirent *de;
 void sortBySize(){
    FILE *fptr;
     char ch;
-    system("ls -S > b1.txt");
+    system("ls -Srhs > b1.txt");
     fptr = fopen("b1.txt", "r");
     if (fptr == NULL)
     {
@@ -99,7 +99,7 @@ void sortBySize(){
 void sortByDate(){
     FILE *fptr;
     char ch;
-    system("ls -t > c1.csv");
+    system("la -tr > c1.csv");
 
     /*  open the file for reading */
 
@@ -131,7 +131,7 @@ printf("1.Extensions\n");
 printf("2.Size\n");
 printf("3.Date created \n");
 printf("4.Alphabetically(Default linux sort)\n");
-printf("5.Details of all Files\n");
+
 printf("==============================\n");
 int a;
 scanf("%d",&a);
