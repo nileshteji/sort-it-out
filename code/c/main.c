@@ -99,7 +99,7 @@ void sortBySize(){
 void sortByDate(){
     FILE *fptr;
     char ch;
-    system("la -tr > c1.csv");
+    system("ls -ltr > c1.csv");
 
     /*  open the file for reading */
 

@@ -1,0 +1,11 @@
+total 52
+-rw-r--r-- 1 codingtitan codingtitan  1411 Nov 23 19:12 sortingfinal.c
+-rw-rw-r-- 1 codingtitan codingtitan   348 Nov 24 16:00 sortByAlphabet.c
+-rw-r--r-- 1 codingtitan codingtitan   348 Nov 24 16:00 sortByAlphabet.h
+-rw-r--r-- 1 codingtitan codingtitan  1777 Nov 24 20:50 sortBySize.c
+-rw-r--r-- 1 codingtitan codingtitan     2 Nov 24 21:19 chdir.c
+-rw-rw-r-- 1 codingtitan codingtitan   994 Nov 24 23:55 scode.c
+-rw-r--r-- 1 codingtitan codingtitan  2857 Dec 17 16:59 main.c
+-rwxr-xr-x 1 codingtitan codingtitan 17552 Dec 17 17:58 a.out
+-rw-r--r-- 1 codingtitan codingtitan   165 Dec 17 17:58 b1.txt
+-rw-r--r-- 1 codingtitan codingtitan     0 Dec 17 17:58 c1.csv
